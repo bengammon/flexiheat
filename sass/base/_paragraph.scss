@@ -1,0 +1,15 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $PARAGRAPH
+ * ------------------------------------------------------------------------
+ */
+
+p {
+	font-weight: $font-weight-default;
+	line-height: $line-height-default;
+	margin-bottom: $spacing-default;
+	margin-left: $spacing-small;
+	margin-right: $spacing-small;
+
+	&:last-child { margin-bottom: 0; }
+}

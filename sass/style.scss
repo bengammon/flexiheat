@@ -1,0 +1,45 @@
+/*!
+Theme Name: Flexiheat
+Theme URI: https://flexibleheating.co.uk
+Author: Ben Gammon
+Author URI: https://bengammon.co.uk
+Description: 
+Version: 1.0
+*/
+
+@import "vars";
+
+@import "mixins/media-queries";
+
+@import "wordpress/core";
+
+@import "base/reset";
+@import "base/blockquote";
+@import "base/body";
+@import "base/em";
+@import "base/footer";
+@import "base/header";
+@import "base/headings";
+@import "base/image";
+@import "base/link";
+@import "base/list";
+@import "base/main";
+@import "base/paragraph";
+@import "base/strong";
+
+@import "components/embed";
+@import "components/hero";
+@import "components/icons";
+@import "components/list";
+@import "components/logo";
+@import "components/menu";
+@import "components/promo";
+@import "components/section";
+@import "components/work";
+
+@import "layout/holding-page";
+
+@import "trumps/flex";
+@import "trumps/spacing";
+@import "trumps/text";
+@import "trumps/width";

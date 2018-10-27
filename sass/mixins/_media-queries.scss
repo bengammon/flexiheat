@@ -1,0 +1,17 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $MEDIAQUERIES
+ * ------------------------------------------------------------------------
+ */
+
+@mixin bp-min-width($width) {
+	@media all and (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin bp-max-width($width) {
+	@media all and (max-width: $width - 1) {
+		@content; 
+	}
+}

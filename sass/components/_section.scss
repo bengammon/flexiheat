@@ -1,0 +1,45 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $SECTION
+ * ------------------------------------------------------------------------
+ */
+
+section,
+.section {
+	display: block;
+}
+
+	.section__content {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: $content-width;
+		position: relative;
+		width: 100%;
+		z-index: 1; /* To position self above dark red :after element */
+
+		&--narrow { max-width: $content-width-narrow; }
+		&--full { 
+			max-width: 100%; 
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+.section--featured {
+	padding-bottom: $spacing-huge;
+	padding-top: $spacing-huge;
+	position: relative;
+
+	h1 {
+		a {
+			color: $color-grey-dark;
+			text-decoration: none;
+		}
+	}
+}
+
+.section--hero {
+	min-height: 90vh;
+}

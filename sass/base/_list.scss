@@ -1,0 +1,26 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $LIST-BASE
+ * ------------------------------------------------------------------------
+ */
+
+ul,
+ol {
+	box-sizing: border-box;
+	margin-bottom: $spacing-default;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	padding-left: $spacing-default;	
+
+	> li {
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}

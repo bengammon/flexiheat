@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $PROMO
+ * ------------------------------------------------------------------------
+ */
+
+.promo {
+	overflow: hidden;
+	position: relative;
+
+	&:hover {
+		.promo__text {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		.promo__overlay {
+			background-color: rgba($color-blue, .8);
+		}
+	}
+
+	p { margin-bottom: 0; }
+}
+	
+	.promo__text {
+		height: 100%;
+		left: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		border: 0; 
+		color: $color-white;
+		opacity: 0;
+		text-align: center;
+
+		transform: translateY(10px);
+		transition: .3s ease;
+
+		h3 { 
+			color: $color-white;
+			margin-bottom: 0;
+		}
+	}
+
+	.promo__overlay {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+
+		transition: .3s ease;
+
+		background-color: rgba($color-blue, 0);
+	}
+
+	.promo__image {
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+
+		img {
+			display: block;
+			height: auto;
+		}
+	}

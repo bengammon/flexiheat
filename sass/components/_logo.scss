@@ -1,0 +1,37 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $LOGO
+ * ------------------------------------------------------------------------
+ */
+
+.logo {
+    display: inline-block;
+    height: 79px;
+    width: 175px;
+
+    background-image: url(assets/FlexiHeat_Logo_BLACK_WITH_subheading.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include bp-min-width($bp-medium) {
+        height: 114px;
+        width: 250px;
+    }
+}
+
+.logo--white {
+	background-image: url(assets/FlexiHeat_Logo_WHITE_WITH_subheading.svg);
+}
+
+.logo--gas-safe {
+    height: 68px;
+    width: 60px;
+
+    background-image: url(assets/Gas_Safe_Register.svg);
+
+    @include bp-min-width($bp-medium) {
+        height: 100px;
+        width: 89px;
+    }
+}

@@ -1,0 +1,41 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $HEADINGS
+ * ------------------------------------------------------------------------
+ */
+
+h1,h2,h3,h4 { 
+	margin-bottom: $spacing-small;
+	margin-left: $spacing-small;
+	margin-right: $spacing-small;
+	padding-top: 0;
+
+	font-family: $font-family-heading;
+	font-weight: 700;
+}
+
+h1 {
+	margin-bottom: $spacing-default;
+
+	font-size: $font-size-heading-mobile;
+
+	@include bp-min-width($bp-medium) {
+		font-size: $font-size-heading;
+	}
+}
+
+h2 {
+	font-size: $font-size-subheading-mobile;
+
+	@include bp-min-width($bp-medium) {
+		font-size: $font-size-subheading;
+	}
+}
+
+h3 {
+	font-size: $font-size-small;
+
+	@include bp-min-width($bp-medium) {
+		font-size: $font-size-subheading-mobile;
+	}
+}

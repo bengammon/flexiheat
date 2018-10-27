@@ -1,0 +1,29 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $BODY
+ * ------------------------------------------------------------------------
+ */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	
+	background-color: $color-site-background;
+	color: $color-grey-dark;
+	font-family: $font-family-default;
+	font-size: $font-size-small;
+	
+	@include bp-min-width($bp-medium) {
+		font-size: $font-size-default;
+	}
+}
+
+.page-template-page-holding {
+	align-items: center;
+	justify-content: center;
+
+	main {
+		flex: none;
+	}
+}

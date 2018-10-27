@@ -1,0 +1,38 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $FOOTER
+ * ------------------------------------------------------------------------
+ */
+
+footer,
+.footer {
+	overflow: hidden;
+	position: relative;
+}
+
+	.footer__content {
+		box-sizing: border-box;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: $content-width;
+		padding-bottom: $spacing-small;
+		padding-top: $spacing-small;
+		position: relative;
+
+		font-size: $font-size-default;
+		
+		@include bp-min-width($bp-medium) {
+			padding-left: 4%;
+			padding-right: 4%;
+		}
+
+		@include bp-min-width($bp-large) {
+			padding-left: 7%;
+			padding-right: 7%;
+		}
+
+		@include bp-min-width($bp-huge) {
+			padding-left: $spacing-default * 2;
+			padding-right: $spacing-default * 2;
+		}
+	}

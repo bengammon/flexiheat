@@ -1,0 +1,53 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $VARS
+ * ------------------------------------------------------------------------
+ */
+
+$bp-medium: 768px;
+$bp-large: 1280px;
+$bp-huge: 1400px;
+
+$color-brand: #F6882D;
+
+$color-blue: #3cb8cc;
+$color-green: #20ad58;
+$color-grey: #999999;
+$color-grey-dark: #312d2b;
+$color-white: #ffffff; 
+
+$color-site-background: #414042;
+$color-text-default: $color-grey-dark;
+
+$content-width-narrow: 700px;
+$content-width: 1400px;
+
+$font-family-default: 'Roboto', sans-serif;
+$font-family-heading: 'Roboto', sans-serif;
+
+$font-size-small: 1rem;
+$font-size-default: 17px;
+$font-size-heading-mobile: 2rem;
+$font-size-heading: 3.5rem;
+$font-size-subheading-mobile: 1.5rem;
+$font-size-subheading: 3rem;
+
+$font-weight-default: 300;
+$font-weight-bold: 500;
+
+$header-height: 70px;
+
+$hero-image-width: 1024px;
+
+$line-height-tight: 1;
+$line-height-default: 1.4;
+$line-height-loose: 1.7;
+
+$spacing-tiny: .5rem;
+$spacing-small: 1rem;
+$spacing-default: 2rem;
+$spacing-large: 5rem;
+$spacing-huge: 10rem;
+
+$z-index-front: 1;
+$z-index-back: -1;

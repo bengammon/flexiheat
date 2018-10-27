@@ -1,0 +1,74 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $HEADER
+ * ------------------------------------------------------------------------
+ */
+
+header,
+.header {
+	overflow: hidden;
+	position: relative;
+	z-index: 2; /* To ensure the shadow is visible */
+}
+
+	.header__content {
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		height: $header-height;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: $spacing-small;
+		padding-right: $spacing-small;
+		max-width: $content-width;
+		position: relative;
+		z-index: 1; /* To position self above dark red :after element */
+
+		font-size: $font-size-default;
+
+		@include bp-min-width($bp-medium) {
+			padding-left: 4%;
+			padding-right: 4%;
+		}
+
+		@include bp-min-width($bp-large) {
+			padding-left: 7%;
+			padding-right: 7%;
+		}
+
+		@include bp-min-width($bp-huge) {
+			padding-left: $spacing-large;
+			padding-right: $spacing-large;
+		}
+	}
+
+.site-title {
+	display: none;
+	margin-right: auto;
+
+	color: $color-grey-dark;
+	font-size: $font-size-small;
+	font-weight: 700;
+
+	@include bp-min-width($bp-medium) {
+		display: block;
+		font-size: $font-size-default;
+	}
+
+	a { 
+		color: $color-grey-dark;
+		text-decoration: none;
+	}
+
+	&--small {
+		display: block;
+		
+		@include bp-min-width($bp-medium) {
+			display: none;
+		}
+	}
+}
+
+.site-description {
+	color: $color-grey-dark;
+}

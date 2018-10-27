@@ -1,0 +1,22 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $FLEX
+ * ------------------------------------------------------------------------
+ */
+
+.flex { display: flex; }
+
+.flex--align-center { align-items: center; }
+
+.flex--direction-column { flex-direction: column; }
+
+.flex--direction-row { flex-direction: row; }
+.flex--direction-row\@medium { 
+	@include bp-min-width($bp-medium) { 
+		flex-direction: row;
+	}
+}
+
+.flex--justify-between { justify-content: space-between; }
+
+.flex--justify-end { justify-content: flex-end; }
