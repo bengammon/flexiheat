@@ -6,6 +6,9 @@
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-autoprefixer": "~0.2.20130806",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "minimatch": ">=3.0.2",
+    "debug": ">=2.6.9",
+    "lodash": ">=4.17.5"
   }
 }
