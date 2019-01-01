@@ -9,7 +9,7 @@
     height: 79px;
     width: 175px;
 
-    background-image: url(assets/FlexiHeat_Logo_BLACK_WITH_subheading.svg);
+    background-image: url(assets/flexiheat-logo.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -21,14 +21,14 @@
 }
 
 .logo--white {
-	background-image: url(assets/FlexiHeat_Logo_WHITE_WITH_subheading.svg);
+	background-image: url(assets/flexiheat-logo-white.svg);
 }
 
 .logo--gas-safe {
     height: 68px;
     width: 60px;
 
-    background-image: url(assets/Gas_Safe_Register.svg);
+    background-image: url(assets/gas-safe-register-logo.svg);
 
     @include bp-min-width($bp-medium) {
         height: 100px;
