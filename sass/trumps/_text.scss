@@ -13,3 +13,21 @@
 .text--italic { font-style: italic; }
 
 .text--small { font-size: $font-size-small; }
+
+.text--tel {
+    font-size: $font-size-heading-mobile;
+    font-weight: $font-weight-bold;
+}
+
+.text--call-out {
+    color: $color-brand;
+}
+
+.text--hours {
+    color: $color-grey;
+    font-size: $font-size-small;
+}
+
+.text--highlight {
+	color: $color-brand;
+}
