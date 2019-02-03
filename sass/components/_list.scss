@@ -38,16 +38,43 @@
 	}
 }
 
+.list--social {
+	display: flex;
+	align-items: center;
+
+	li {
+		display: flex;
+		align-items: center;
+
+		a { display: block; }
+
+		svg {
+			height: 1.2rem;
+			width: 1.2rem;
+
+			fill: $color-brand;
+		}
+	}
+}
+
 .list--services {
-	margin: 0 0 0 1rem;
+	margin-bottom: $spacing-small;
+	margin-left: 1.1rem;
+	width: 41%;
 	
 	color: $color-brand;
 	list-style-type: disc;
 
+	@include bp-min-width($bp-medium) {
+		margin-left: 1.3rem;
+		margin-bottom: $spacing-small * 3;
+		width: 42%;
+	}
+
 	li {
 		padding: .4rem 0;
 
-		border-bottom: 1px solid lighten($color-grey-dark, 70%);
+		border-bottom: 1px solid lighten($color-grey-dark, 60%);
 	}
 
 	&:first-of-type {
@@ -55,8 +82,6 @@
 			&:last-child {
 				margin-bottom: .4rem;
 				padding-bottom: .4rem;
-
-				border-bottom: 1px solid lighten($color-grey-dark, 70%);
 			}
 		}
 		
