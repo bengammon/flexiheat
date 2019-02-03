@@ -27,6 +27,8 @@ Version: 1.0
 @import "base/paragraph";
 @import "base/strong";
 
+@import "components/about";
+@import "components/card";
 @import "components/embed";
 @import "components/hero";
 @import "components/icons";
@@ -35,6 +37,7 @@ Version: 1.0
 @import "components/menu";
 @import "components/promo";
 @import "components/section";
+@import "components/services";
 @import "components/work";
 
 @import "layout/header";

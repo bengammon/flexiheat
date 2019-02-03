@@ -1,0 +1,46 @@
+/*
+ * ------------------------------------------------------------------------
+ *   $CARD
+ * ------------------------------------------------------------------------
+ */
+
+.card--bio {
+    padding-bottom: $spacing-small * 1.4;
+    margin-top: $spacing-default;
+    width: 340px;
+
+    overflow: hidden;
+
+    background-color: $color-white;
+    border-radius: $border-radius-default;
+    box-shadow: 0px 5px 20px 0px rgba($color-grey-dark, 0.2);
+
+    @include bp-min-width($bp-large) {
+        margin-top: 0;
+    }
+
+    img {
+        margin-bottom: $spacing-small * 1.4;
+
+        border-bottom: 5px solid $color-brand;
+    }
+
+    h3 {
+        font-size: 1rem;
+
+        @include bp-min-width($bp-medium) {
+            font-size: 1.1rem;
+        }
+    }
+
+    h3,
+    p {   
+        padding-left: $spacing-small;
+        padding-right: $spacing-small;
+
+        @include bp-min-width($bp-medium) {
+            padding-left: $spacing-small * 1.5;
+            padding-right: $spacing-small * 1.5;
+        }
+    }
+}
