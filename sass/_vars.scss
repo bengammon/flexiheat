@@ -4,19 +4,21 @@
  * ------------------------------------------------------------------------
  */
 
+$border-radius-default: 3px;
+
 $bp-medium: 768px;
 $bp-large: 1280px;
-$bp-huge: 1400px;
+$bp-huge: 1440px;
 
 $color-brand: #F6882D;
 
 $color-blue: #3cb8cc;
 $color-green: #20ad58;
 $color-grey: #999999;
-$color-grey-dark: #312d2b;
+$color-grey-dark: #414042;
 $color-white: #ffffff; 
 
-$color-site-background: #414042;
+$color-site-background: $color-white;
 $color-text-default: $color-grey-dark;
 
 $content-width-narrow: 700px;
@@ -25,15 +27,18 @@ $content-width: 1400px;
 $font-family-default: 'Roboto', sans-serif;
 $font-family-heading: 'Roboto', sans-serif;
 
-$font-size-small: 1rem;
+$font-size-small: .8rem;
 $font-size-default: 17px;
 $font-size-heading-mobile: 2rem;
 $font-size-heading: 3.5rem;
 $font-size-subheading-mobile: 1.5rem;
-$font-size-subheading: 3rem;
+$font-size-subheading: 2.4rem;
+$font-size-featured-mobile: 2.2rem;
+$font-size-featured-tablet: 3.5rem;
+$font-size-featured: 6rem;
 
 $font-weight-default: 300;
-$font-weight-bold: 500;
+$font-weight-bold: 700;
 
 $header-height: 70px;
 
@@ -49,5 +54,9 @@ $spacing-default: 2rem;
 $spacing-large: 5rem;
 $spacing-huge: 10rem;
 
-$z-index-front: 1;
-$z-index-back: -1;
+$width-content: 1280px;
+
+$z-index-front: 100;
+$z-index-default: 1;
+$z-index-under: -1;
+$z-index-back: -100;
