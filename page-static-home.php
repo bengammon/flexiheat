@@ -15,7 +15,7 @@
         </div>
         <div class="header__contact">
             <p class="text--call-out">No call out fee</p>
-            <p class="text--tel">07809 299 198</p>
+            <p class="text--tel">02381 221 991 &#8226; 07809 299 198</p>
             <p class="text--hours">Mon-Sat: 6am-10pm. Sun: 7am-10pm</p>
         </div>
     </div>
@@ -24,7 +24,7 @@
 <div class="section section--masthead">
     <div class="section__content">
         <div>
-            <p class="text--tel">07809 299 198</p>
+            <p class="text--tel">02381 221 991 &#8226; 07809 299 198</p>
             <p class="text--call-out">No call out fee</p>
             <p class="text--hours">Mon-Sat: 6am-10pm. Sun: 7am-10pm</p>
         </div>
@@ -43,8 +43,7 @@
 
 <div class="section section--featured">
     <div class="section__content">
-        <h1>Boiler service now only £60</h1>
-        <p>With a free gas safety check on a second appliance</p>
+        <h1>Boiler service £50</h1>
     </div>
     <div class="section__square"></div>
     <div class="section__square2"></div>
@@ -53,13 +52,13 @@
 <div class="section section--offers">
     <div class="section__content">
         <div>
+            <p>Boiler &amp; heating repairs <span class="text--highlight">from &pound;60</span></p>
+        </div>
+        <div>
             <p>Conventional boilers <span class="text--highlight">from &pound;1,299</span></p>
         </div>
         <div>
             <p>Combi boilers <span class="text--highlight">from &pound;1,599</span></p>
-        </div>
-        <div>
-            <p>Boiler &amp; heating repairs <span class="text--highlight">from &pound;70</span></p>
         </div>
     </div>
 </div>
@@ -72,6 +71,7 @@
             <h2>Services provided</h2>
             
             <ul class="list list--services">
+                <li><p>Free quotations</p></li>
                 <li><p>Same day boiler breakdown service</p></li>
                 <li><p>Boiler installation</p></li>
                 <li><p>Boiler servicing and repair</p></li>

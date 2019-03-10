@@ -63,6 +63,10 @@ section,
 				align-items: center;
 				justify-content: center;
 				flex-wrap: wrap;
+
+				@include bp-min-width($bp-medium) {
+					max-width: 30rem;
+				}
 			}
 
 			&:last-child {
@@ -75,11 +79,20 @@ section,
 		}
 
 		.text--call-out{
-			margin-left: $spacing-small;
+			margin-right: $spacing-small;
+
+			font-size: $font-size-small;
 		}
 
 		.text--tel {
-			font-size: 1.5rem;
+			width: 100%;
+
+			font-size: 1.2rem;
+			text-align: center;
+
+			@include bp-min-width($bp-medium) {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

@@ -34,6 +34,10 @@ header,
 		z-index: 1; 
 
 		font-size: $font-size-default;
+
+		@include bp-min-width($bp-medium) {
+			align-items: center;
+		}
 	}
 
 		.header__contact {
@@ -52,7 +56,6 @@ header,
 
 		.header__social {
 			@include bp-min-width($bp-medium) {
-				margin-bottom: 1.3rem;
 				margin-left: auto;
 				margin-right: 2rem;
 			}

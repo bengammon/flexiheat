@@ -15,8 +15,15 @@
 .text--small { font-size: $font-size-small; }
 
 .text--tel {
-    font-size: $font-size-heading-mobile;
     font-weight: $font-weight-bold;
+
+    @include bp-min-width($bp-medium) {
+        font-size: 1.4rem;
+    }
+
+    @include bp-min-width($bp-large) {
+        font-size: $font-size-heading-mobile;
+    }
 }
 
 .text--call-out {
