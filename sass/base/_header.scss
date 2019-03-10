@@ -10,9 +10,6 @@ header,
 	position: relative;
 	z-index: $z-index-front; /* To ensure the shadow is visible */
 
-	background-color: $color-white;
-	box-shadow: 0px 5px 20px 0px rgba($color-grey-dark, 0.2);
-
 	@include bp-min-width($bp-huge) {
 		box-shadow: none;
 	}
