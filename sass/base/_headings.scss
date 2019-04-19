@@ -24,17 +24,27 @@ h1 {
 }
 
 h2 {
-	font-size: $font-size-subheading-mobile;
+	margin-bottom: 2rem;
+
+	font-size: $font-size-heading-two-mobile;
 
 	@include bp-min-width($bp-medium) {
-		font-size: $font-size-subheading;
+		font-size: $font-size-heading-two;
+	}
+
+	p + &,
+	ul + &,
+	ol + & {
+		margin-bottom: 2rem;
 	}
 }
 
 h3 {
-	font-size: $font-size-small;
+	margin-bottom: 2rem;
+
+	font-size: $font-size-heading-three;
 
 	@include bp-min-width($bp-medium) {
-		font-size: $font-size-subheading-mobile;
+		font-size: $font-size-heading-three;
 	}
 }

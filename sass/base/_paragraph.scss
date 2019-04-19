@@ -10,4 +10,8 @@ p {
 	margin-bottom: $spacing-default;
 
 	&:last-child { margin-bottom: 0; }
+
+	& + h2 {
+		margin-top: 5rem;
+	}
 }

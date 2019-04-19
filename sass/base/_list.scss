@@ -23,4 +23,8 @@ ol {
 			padding-bottom: 0;
 		}
 	}
+
+	& + h2 {
+		margin-top: 5rem;
+	}
 }
