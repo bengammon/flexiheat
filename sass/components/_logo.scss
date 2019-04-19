@@ -6,43 +6,40 @@
 
 .logo {
     display: inline-block;
-    height: 79px;
-    width: 175px;
+}
+
+.logo--flexiheat {
+    height: 50px;
+    width: 160px;
 
     background-image: url(assets/flexiheat-logo.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
-
-    @include bp-min-width($bp-medium) {
-        height: 114px;
-        width: 250px;
-    }
 }
 
-.logo--flexiheat {
-    height: 60px;
-    width: 130px;
-
-    @include bp-min-width($bp-medium) {
-        height: 90px;
-        width: 200px;
-    }
+.logo--flexiheat-dark {
+    background-image: url(assets/flexiheat-logo-dark.svg);
 }
 
-.logo--white {
-	background-image: url(assets/flexiheat-logo-white.svg);
+.logo--flexiheat-full-dark {
+    width: 200px;
+    height: 91px;
+
+    background-image: url(assets/flexiheat-logo-full-dark.svg);
 }
 
 .logo--gas-safe {
-    float: right;
-    height: 68px;
-    width: 60px;
+    height: 50px;
+    width: 45px;
 
     background-image: url(assets/gas-safe-register-logo.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     @include bp-min-width($bp-medium) {
-        height: 100px;
-        width: 89px;
+        height: 55px;
+        width: 49px;
     }
 }

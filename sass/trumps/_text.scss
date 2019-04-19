@@ -15,11 +15,8 @@
 .text--small { font-size: $font-size-small; }
 
 .text--tel {
+    font-size: 1.8rem;
     font-weight: $font-weight-bold;
-
-    @include bp-min-width($bp-medium) {
-        font-size: 1.4rem;
-    }
 
     @include bp-min-width($bp-large) {
         font-size: $font-size-heading-mobile;
@@ -27,12 +24,13 @@
 }
 
 .text--call-out {
-    color: $color-brand;
+    color: $color-grey-4;
+    font-size: 1.4rem;
 }
 
 .text--hours {
-    color: $color-grey;
-    font-size: $font-size-small;
+    color: $color-grey-4;
+    font-size: 1.4rem;
 }
 
 .text--highlight {

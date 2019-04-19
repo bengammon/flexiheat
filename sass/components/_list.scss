@@ -23,18 +23,8 @@
 }
 
 .list--double {
-	.list__item {
-		@include bp-min-width($bp-medium) {
-			width: 50%;
-		}
-	}
-
-	&-spaced {
-		.list__item {
-			@include bp-min-width($bp-medium) {
-				max-width: 660px;
-			}
-		}
+	@include bp-min-width($bp-medium) {
+		column-count: 2;
 	}
 }
 
@@ -59,38 +49,36 @@
 
 .list--services {
 	margin-bottom: $spacing-small;
-	margin-left: 1.1rem;
-	width: 41%;
-	
-	color: $color-brand;
-	list-style-type: disc;
+	margin-left: 0;
 
-	@include bp-min-width($bp-medium) {
-		margin-left: 1.3rem;
-		margin-bottom: $spacing-small * 3;
-		width: 42%;
-	}
+	list-style: none;
 
 	li {
-		padding: .4rem 0;
+		margin-bottom: 1rem;
+		padding: .4rem 0 .3rem 2rem;
 
-		border-bottom: 1px solid lighten($color-grey-dark, 60%);
-	}
+		background-image: url(assets/flame.svg);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-size: 13px 22px;
 
-	&:first-of-type {
-		li {
-			&:last-child {
-				margin-bottom: .4rem;
-				padding-bottom: .4rem;
+		&:first-child,
+		&:last-child {
+			padding: .4rem 0 .3rem 2rem;
+
+			@include bp-min-width($bp-medium) {
+				padding: .4rem 0 0 2rem;
 			}
 		}
-		
+
+		@include bp-min-width($bp-medium) {
+			margin-bottom: 2rem;
+			padding: .4rem 0 0 2rem;
+		}
 	}
 
 	p {
 		margin: 0;
-
-		color: $color-text-default;
 	}
 }
 
