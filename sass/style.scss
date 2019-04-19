@@ -12,6 +12,8 @@ Version: 1.0
 @import "mixins/media-queries";
 
 @import "wordpress/core";
+@import "wordpress/wpforms";
+@import "wordpress/wp-google-reviews";
 
 @import "base/reset";
 @import "base/blockquote";
@@ -20,6 +22,7 @@ Version: 1.0
 @import "base/footer";
 @import "base/header";
 @import "base/headings";
+@import "base/html";
 @import "base/image";
 @import "base/link";
 @import "base/list";
@@ -30,6 +33,7 @@ Version: 1.0
 @import "components/about";
 @import "components/card";
 @import "components/embed";
+@import "components/featured";
 @import "components/hero";
 @import "components/icons";
 @import "components/list";
