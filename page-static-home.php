@@ -11,7 +11,7 @@
         <div class="featured">
             <div class="featured__offer">
                 <p>Boiler servicing only</p>
-                <p class="featured__price">&pound;50</p>
+                <p class="featured__price">&pound;60</p>
             </div>
             
             <div class="featured__description">
