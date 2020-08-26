@@ -11,7 +11,7 @@
     z-index: $editor-toolbar-z-index;
 
     @include themify($themes) {
-        background-color: rgba(themed('color.backgroundDark'), .9);
+        background-color: rgba(themed('color.background'), .9);
         
         color: themed('color.white');
     }
