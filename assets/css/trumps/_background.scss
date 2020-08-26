@@ -1,0 +1,33 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $BACKGROUND
+ * -----------------------------------------------------------------------------
+ */
+
+.bg--color {
+    &-primary {
+        @include themify($themes) {
+            background-color: themed('color.brandPrimary');
+        }
+    }
+    &-secondary {
+        @include themify($themes) {
+            background-color: themed('color.brandSecondary');
+        }
+    }
+    &-black {
+        @include themify($themes) {
+            background-color: themed('color.black');
+        }
+    }
+    &-grey {
+        @include themify($themes) {
+            background-color: themed('color.grey');
+        }
+    }
+    &-white {
+        @include themify($themes) {
+            background-color: themed('color.white');
+        }
+    }
+}

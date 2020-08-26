@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #Etch.OrchardCore.ThemeBoilerplate THEME
+   ========================================================================== */
+
+@import "settings/all";
+
+@import "settings/themes/default";
+
+@import "tools/all";
+
+/**
+* CSS reset provided by Andy Bell 
+* https://hankchizljaw.com/wrote/a-modern-css-reset/
+*/
+@import "../../node_modules/modern-css-reset/dist/reset.css";
+@import "../../node_modules/lightgallery.js/src/sass/lightgallery";
+
+@import "generic/all";
+
+@import "layout/all";
+
+@import "base/all";
+
+@import "components/all";
+
+@import "trumps/all";
+   
