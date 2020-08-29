@@ -42,10 +42,10 @@ $themes: map-merge(
                 'default': 2rem,
                 'defaultEM': 1.6em,
                 'small': 1.8rem,
-                'hero': 7rem,
-                'h1': 4rem,
-                'h2': 3rem,
-                'h3': 2rem,
+                'hero': 9.6rem,
+                'h1': 4.8rem,
+                'h2': 3.6rem,
+                'h3': 2.4rem,
                 'h4': 1.8rem,
                 'blockquote': 2rem,
                 'mobile': (
@@ -60,10 +60,14 @@ $themes: map-merge(
                 'default': 400,
                 'bold': 700
             ),
+            'letterSpacing': (
+                'loose': .1rem
+            ),
             'lineHeight': (
-                'default': 2.2rem,
+                'default': 1.4,
                 'heading': 1.2,
-                'hero': 1.4
+                'hero': 1.1,
+                'compact': 1
             )
         )
     ),
