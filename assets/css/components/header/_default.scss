@@ -2,13 +2,11 @@
    #HEADER/DEFAULT
    ========================================================================== */
 
-/**
- * 1. Prevents navigation submenus from appearing below any other z-indexed
- *    components.
- */
 .header {
-    position: relative; /* 1. */
-    z-index: $z-index-front; /* 1. */
+    left: 0;
+    position: absolute;
+    top: $header-padding-top;
+    width: 100%;
     
     &__content {
         @include content-gutter();
@@ -20,6 +18,10 @@
         @include rem(padding-bottom, $header-content-padding-top);
         @include rem(padding-top, $header-content-padding-top);
         position: relative;
+
+        @include themify($themes) {
+            border-bottom: 1px solid rgba(themed('color.white'), $header-content-border-opacity);
+        }
 
         @include bp-min-width($bp-desktop) {
             align-items: flex-end;
@@ -81,6 +83,7 @@
             @include themify($themes) {
                 background-color: themed('color.greyLight');
                 border-top-color: themed('color.white');
+                font-size: themed('fontSize.default');
             }
 
             @include bp-min-width($bp-tablet) {
@@ -94,6 +97,20 @@
                     background-color: transparent;
                 }
                 border-top: 0;
+            }
+
+            a {
+                display: block;
+
+                @include themify($themes) {
+                    color: themed('color.white');
+                    line-height: themed('lineHeight.compact');
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 }

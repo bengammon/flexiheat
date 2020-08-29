@@ -5,10 +5,14 @@
 $header-logo-width-mobile: 10rem;
 $header-logo-width: 43rem;
 
-$header-content-padding-top: 2rem;
+$header-content-border-opacity: .1;
+$header-content-padding-bottom: $content-gutter;
+$header-content-padding-top: $content-gutter;
 
 $header-nav-button-height: 1.4rem;
 $header-nav-button-margin-right: .5rem;
 $header-nav-button-width: 2.1rem;
+
+$header-padding-top: 5rem; /* $section-masthead-height */
 
 $mobile-nav-padding-top: 7rem;
