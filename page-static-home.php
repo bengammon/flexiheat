@@ -5,39 +5,43 @@
 <?php include_once("components/masthead.php") ?>
 <?php include_once("components/header.php") ?>
 
-<div class="section section--featured">
+<div class="section section--hero">
     <div class="section__content">
 
-        <div class="featured">
-            <div class="featured__offer">
-                <p>Boiler servicing only</p>
-                <p class="featured__price">&pound;60</p>
+        <h1>Boiler servicing only &pound;60</h1>
+        
+        <div class="site-info">
+            <div class="google-rating">
+                <ul class="list list--horizontal">
+                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
+                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
+                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
+                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
+                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
+                </ul>
+                <p><strong>Google rating: 5.0</strong></p>
+                <p><a href="">Read our Google reviews</a></p>
             </div>
-            
-            <div class="featured__description">
-                <p>Flexible Heating Services are proud to serve the areas of Southampton, Totton, Romsey, Chandlers Ford, Hythe and the New Forest.</p>
+            <div class="site-info__description">
+                <p><em>Local gas registered engineer proudly serving Southampton, Totton, Romsey, Chandlers Ford, Hythe and the New Forest.</em></p>
             </div>
-            <picture class="featured__image">
-                <source srcset="http://flexibleheating.co.uk/wp-content/uploads/2019/04/flexiheat-featured-image-v2.jpg"
-            media="(min-width: 768px)">
-                <img src="http://flexibleheating.co.uk/wp-content/uploads/2019/04/flexiheat-featured-image-v2.jpg" />
-            </picture>
         </div>
+
+        <ul class="list list--horizontal offers">
+            <li><p>No call out fee <strong>Free quotations</strong></p></li>
+            <li><p>Boiler &amp; heating repairs <strong>from &pound;60</strong></p></li>
+            <li><p>Conventional boilers <strong>from &pound;1,299</strong></p></li>
+            <li><p>Combi boilers <strong>from &pound;1,599</strong></p></li>
+        </ul>
+
+        <img class="icon icon--flame icon--flame-watermark" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-flame.svg" />
         
     </div>
-</div>
-
-<div class="section section--offers">
-    <div class="section__content">
-        <div>
-            <p>Boiler &amp; heating repairs <strong>from &pound;60</strong></p>
-        </div>
-        <div>
-            <p>Conventional boilers <strong>from &pound;1,299</strong></p>
-        </div>
-        <div>
-            <p>Combi boilers <strong>from &pound;1,599</strong></p>
-        </div>
+    <div class="section__media">
+        <picture>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/hero-1440w.jpg" media="(min-width: 376px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-1440w.jpg" />
+        </picture>
     </div>
 </div>
 
