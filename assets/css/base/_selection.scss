@@ -8,6 +8,6 @@
 
 ::selection {
     @include themify($themes) {
-        background-color: themed('color.selection');
+        background-color: rgba(themed('color.selection'), $selection-bg-opacity);
     }
 }

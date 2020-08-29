@@ -14,6 +14,9 @@
  *    https://code.google.com/p/chromium/issues/detail?id=320754
  */
 body {
+    margin: 0;
+    padding-top: $body-padding-top;
+    
     @include themify($themes) {
         background-color: themed('color.background');
         color: themed('color.text');
