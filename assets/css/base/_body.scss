@@ -15,7 +15,6 @@
  */
 body {
     margin: 0;
-    padding-top: $body-padding-top;
     
     @include themify($themes) {
         background-color: themed('color.background');
