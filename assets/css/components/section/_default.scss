@@ -8,8 +8,6 @@
     padding-bottom: $section-vertical-padding-mobile;
     padding-top: $section-vertical-padding-mobile;
 
-    overflow-x: hidden;
-
     @include bp-min-width($bp-desktop) {
         padding-bottom: $section-vertical-padding;
         padding-top: $section-vertical-padding;
