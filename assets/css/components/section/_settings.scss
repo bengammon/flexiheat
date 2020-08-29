@@ -2,8 +2,20 @@
    #SECTION/SETTINGS
    ========================================================================== */
 
-$section-masthead-bg-opacity: .6;
-$section-masthead-height: $body-padding-top;
+$section-hero-flame-left-position: -7rem;
+$section-hero-flame-top-position: -7rem;
+$section-hero-flame-opacity: .8;
+$section-hero-h1-max-width: 65rem;
+$section-hero-media-gradient-darken: 10%;
+$section-hero-media-gradient-start-opacity: .8;
+$section-hero-media-gradient-end-opacity: .4;
+$section-hero-media-gradient-start-position: 20%;
+$section-hero-media-gradient-end-position: 100%;
+$section-hero-padding-bottom: 7.5rem; /* half of $offers-item-height */
+$section-hero-padding-top: $content-gutter * 4.28; /* 13.7rem - header (8.7rem) + masthead (5rem) */
+
+$section-masthead-bg-opacity: .9;
+$section-masthead-height: 5rem;
 
 $section-vertical-padding-mobile: 6rem;
 $section-vertical-padding: 9rem;

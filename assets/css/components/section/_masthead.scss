@@ -13,7 +13,7 @@
     z-index: $z-index-nav;
 
     @include themify($themes) {
-        background-color: rgba(themed('color.greyDark'), $section-masthead-bg-opacity);
+        background-color: rgba(darken(themed('color.background'), 5%), $section-masthead-bg-opacity);
     }
 
     @include bp-min-width($bp-desktop) {
@@ -26,11 +26,14 @@
         justify-content: space-between;
         max-width: $content-width-wide;
 
-        > p {
+        p {
+            display: block;
             margin-bottom: 0;
 
             @include themify($themes) {
                 font-size: themed('fontSize.small');
+                letter-spacing: themed('letterSpacing.loose');
+                line-height: themed('lineHeight.compact');
             }
         }
     }

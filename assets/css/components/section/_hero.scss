@@ -3,10 +3,58 @@
    ========================================================================== */
 
 .section--hero {
+    display: flex;
+    justify-content: center;
     padding: 0;
 
-    .section__content {
-        max-width: none;
-        padding: 0;
+    .section {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            max-width: $content-width-wide;
+            padding: $section-hero-padding-top 0 $section-hero-padding-bottom;
+            position: absolute;
+            width: 100%;
+
+            box-sizing: border-box;
+
+            h1 {
+                max-width: $section-hero-h1-max-width;
+
+                @include text-hero;
+            }
+
+            .icon--flame-watermark {
+                position: absolute;
+                left: $section-hero-flame-left-position;
+                top: $section-hero-flame-top-position;
+                z-index: $z-index-under;
+
+                opacity: $section-hero-flame-opacity;
+            }
+        }
+
+        &__media {
+            position: relative;
+            z-index: $z-index-back;
+
+            &:before {
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: $z-index-default;
+
+                @include themify($themes) {
+                    background: linear-gradient(135deg, 
+                                rgba(darken(themed('color.background'), $section-hero-media-gradient-darken), $section-hero-media-gradient-start-opacity) $section-hero-media-gradient-start-position,
+                                rgba(darken(themed('color.background'), $section-hero-media-gradient-darken), $section-hero-media-gradient-end-opacity) $section-hero-media-gradient-end-position);
+                }
+            }
+        }
     }
 }
