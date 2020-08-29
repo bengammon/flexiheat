@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #OFFERS/DEFAULT
+   ========================================================================== */
+
+.offers {
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    width: 100%;
+
+    transform: translateY(50%);
+
+    @include box-shadow;
+
+    > li {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        height: $offers-item-height;
+        justify-content: center;
+
+        @include themify($themes) {
+            background-color: darken(themed('color.background'), $offers-bg-darken);
+            border-right: 1px solid rgba(themed('color.white'), $offers-border-opacity);
+            font-size: themed('fontSize.default');
+        }
+
+        text-align: center;
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        strong {
+            display: block;
+
+            @include themify($themes) {
+                color: themed('color.brandPrimary');
+                font-weight: themed('fontWeight.default');
+            }
+        }
+    } 
+}
