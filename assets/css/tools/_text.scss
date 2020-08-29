@@ -30,6 +30,7 @@
 
     @include themify($themes) {
         @include rem(font-size, themed('fontSize.mobile.hero'));
+        font-weight: themed('fontWeight.default');
         line-height: themed('lineHeight.hero');
     }
 
