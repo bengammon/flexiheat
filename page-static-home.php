@@ -2,8 +2,8 @@
 
 <?php get_header(); ?>
 
-<?php include_once("components/header.php") ?>
 <?php include_once("components/masthead.php") ?>
+<?php include_once("components/header.php") ?>
 
 <div class="section section--featured">
     <div class="section__content">
