@@ -1,9 +1,9 @@
-<header>
+<header class="header">
     <div class="header__content">
         <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-flexible-heating-services.svg" />        
         
-        <nav class="header__contact">
-            <ul>
+        <nav class="header__nav">
+            <ul class="list list--horizontal-spaced">
                 <li>
                     <a href="#about">About us</a>
                 </li>
