@@ -4,4 +4,8 @@
 
 .icon {
     display: block;
+
+    &--star {
+        width: $icon-star-width;
+    }
 }

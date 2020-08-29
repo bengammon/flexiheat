@@ -1,7 +1,11 @@
 /* ==========================================================================
-   #ICON/SETTINGS
+   #ICON/FLAME
    ========================================================================== */
 
-$icon-flame-width: 3.2rem;
-$icon-flame-watermark-width: 42rem;
-$icon-star-width: 3.2rem;
+.icon--flame {
+    width: $icon-flame-width;
+
+    &-watermark {
+        width: $icon-flame-watermark-width;
+    }
+}
