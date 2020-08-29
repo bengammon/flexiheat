@@ -23,6 +23,18 @@
     }
 }
 
+@mixin list-horizontal-spaced-small() {
+    @include list-horizontal();
+
+    > li {
+        @include rem(margin-right, $content-gutter-small);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
 @mixin list-horizontal-spaced() {
     @include list-horizontal();
 

@@ -9,3 +9,7 @@
 .list--horizontal-spaced {
     @include list-horizontal-spaced();
 }
+
+.list--horizontal-spaced-small {
+    @include list-horizontal-spaced-small();
+}
