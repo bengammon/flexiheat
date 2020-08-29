@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #SITE-INFO/DEFAULT
+   ========================================================================== */
+
+.site-info {
+    display: flex;
+
+    &__description {
+        max-width: $site-info-description-max-width;
+        margin-left: $site-info-description-margin-left;
+        padding-left: $content-gutter;
+
+        @include themify($themes) {
+            border-left: 1px solid rgba(themed('color.white'), .1);
+            font-size: themed('fontSize.small');
+            line-height: themed('lineHeight.loose');
+        }
+    } 
+}
