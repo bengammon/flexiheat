@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #GOOGLE-RATING/DEFAULT
+   ========================================================================== */
+
+.google-rating {
+    display: block;
+
+    @include themify($themes) {
+        font-size: themed('fontSize.small');
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacing-small;
+
+        > li {
+            margin-right: $google-rating-list-item-margin-right;
+        }
+    }
+
+    p {
+        margin-bottom: $spacing-small;
+    }
+
+        strong {
+            @include themify($themes) {
+                font-size: themed('fontSize.h3');
+            }
+        }
+
+        a {
+            @include themify($themes) {
+                color: themed('color.white');
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+}
