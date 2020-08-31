@@ -2,6 +2,12 @@
    #LIST/SETTINGS
    ========================================================================== */
 
+$list-bullets-li-border-opacity: .1;
+$list-bullets-li-flame-size: 1.1rem;
+$list-bullets-li-padding-bottom: 1.6rem;
+$list-bullets-li-padding-left: 3rem;
+$list-bullets-li-padding-top: 1.2rem;
+
 $list-navigation-anchor-padding-bottom: 1rem;
 $list-navigation-anchor-padding-top: 1.5rem;
 
@@ -13,3 +19,5 @@ $list-navigation-chevron-height: .6rem;
 $list-navigation-chevron-margin-bottom: .4rem;
 $list-navigation-chevron-margin-left: .5rem;
 $list-navigation-chevron-width: 1rem;
+
+$list-prices-li-last-child-margin-left: 5rem;

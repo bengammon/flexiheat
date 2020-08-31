@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #LIST/PRICES
+   ========================================================================== */
+   
+.list--prices {
+    > li {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-bottom: $list-bullets-li-padding-bottom;
+        padding-top: $list-bullets-li-padding-top;
+
+        @include themify($themes) {
+            border-bottom: 1px solid rgba(themed('color.white'), $list-bullets-li-border-opacity);
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+
+            &:last-child {
+                margin-left: $list-prices-li-last-child-margin-left;
+            }
+
+            small {
+                display: block;
+
+                font-style: italic;
+            }
+        }
+    }
+}

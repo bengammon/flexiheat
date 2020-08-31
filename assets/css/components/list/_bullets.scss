@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #LIST/BULLETS
+   ========================================================================== */
+   
+.list--bullets {
+    > li {
+        padding-bottom: $list-bullets-li-padding-bottom;
+        padding-left: $list-bullets-li-padding-left;
+        padding-top: $list-bullets-li-padding-top;
+
+        background-image: url('assets/img/icon-flame-primary.svg');
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: $list-bullets-li-flame-size;
+
+        @include themify($themes) {
+            border-bottom: 1px solid rgba(themed('color.white'), $list-bullets-li-border-opacity);
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
