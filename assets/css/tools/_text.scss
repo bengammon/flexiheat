@@ -25,6 +25,19 @@
     }
 }
 
+@mixin text-subheading() {
+    @include text-heading();
+
+    @include themify($themes) {
+        font-size: themed('fontSize.default');
+        font-weight: themed('fontWeight.default');
+        letter-spacing: themed('letterSpacing.loose');
+        line-height: themed('lineHeight.compact');
+    }
+
+    text-transform: uppercase;
+}
+
 @mixin text-hero() {
     @include text-heading();
 

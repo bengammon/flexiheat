@@ -27,6 +27,14 @@
         &-right{ text-align: right; }
     }
 
+    &--color {
+        &-primary {
+            @include themify($themes) {
+                color: themed('color.brandPrimary');
+            }
+        }
+    }
+
     &--line-through { text-decoration: line-through; }
     &--underline { text-decoration: underline; }
     &--uppercase { text-transform: uppercase; }
@@ -96,6 +104,10 @@
                 }
             }
         }
+    }
+
+    &--subheading {
+        @include text-subheading;
     }
 
     &--weight {
