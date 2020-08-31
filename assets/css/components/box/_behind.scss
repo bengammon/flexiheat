@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #BOX/BEHIND
+   ========================================================================== */
+
+.box--behind {
+    display: inline-block;
+    position: relative;
+
+    @include themify($themes) {
+        background-color: transparent;
+    }
+
+    &:after {
+        bottom: $box-behind-bottom-position;
+        content: "";
+        left: $box-behind-left-position;
+        position: absolute;
+        right: $box-behind-right-position;
+        top: $box-behind-top-position;
+        z-index: $z-index-under;
+
+        @include themify($themes) {
+            background-color: darken(themed('color.background'), $box-bg-darken);
+        }
+    }
+}
