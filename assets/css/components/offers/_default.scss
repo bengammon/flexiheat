@@ -22,7 +22,7 @@
         @include themify($themes) {
             background-color: darken(themed('color.background'), $offers-bg-darken);
             border-right: 1px solid rgba(themed('color.white'), $offers-border-opacity);
-            font-size: themed('fontSize.default');
+            font-size: themed('fontSize.h3');
         }
 
         text-align: center;
