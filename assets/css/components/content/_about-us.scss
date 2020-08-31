@@ -1,0 +1,37 @@
+/* ==========================================================================
+   #CONTENT/ABOUT-US
+   ========================================================================== */
+
+.content--about-us {
+    &-1 {
+        grid-column: 2 / 8;
+
+        @include bp-min-width($bp-mobile) {
+        }
+    }
+
+    &-2 {
+        grid-column: 2 / 8;
+        grid-row-start: 2;
+    }
+
+    &-3 {
+        grid-column: 3 / 7;
+        grid-row-start: 3;
+    }
+
+    &-4 {
+        grid-column: 3 / 7;
+        grid-row-start: 4;
+    }
+
+    &-5 {
+        grid-column: 3 / 7;
+        grid-row-start: 5;
+    }
+
+    &-6 {
+        grid-column: 9 / 13;
+        grid-row: 1 / 6;
+    }
+}   
