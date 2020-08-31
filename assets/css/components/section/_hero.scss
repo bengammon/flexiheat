@@ -5,6 +5,7 @@
 .section--hero {
     display: flex;
     justify-content: center;
+    margin-bottom: $section-hero-margin-bottom;
     padding: 0;
 
     .section {
