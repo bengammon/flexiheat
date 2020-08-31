@@ -20,6 +20,8 @@
 .layout--master {
     @include layout-master();
 
+    margin-bottom: 14rem;
+
     .layout__item {
         width: 100%;
 
