@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .google-rating {
-    display: block;
+    display: inline-block;
 
     @include themify($themes) {
         font-size: themed('fontSize.small');
