@@ -4,17 +4,7 @@
         <h1>Boiler servicing only &pound;60</h1>
         
         <div class="site-info">
-            <div class="google-rating">
-                <ul class="list list--horizontal">
-                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
-                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
-                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
-                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
-                    <li><img class="icon icon--star" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-star.svg" /></li>
-                </ul>
-                <p><strong>Google rating: 5.0</strong></p>
-                <p><a href="">Read our Google reviews</a></p>
-            </div>
+            <?php include_once("google-rating.php") ?>
             <div class="site-info__description">
                 <p><em>Local gas registered engineer proudly serving Southampton, Totton, Romsey, Chandlers Ford, Hythe and the New Forest.</em></p>
             </div>
