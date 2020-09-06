@@ -3,27 +3,24 @@
 
         <h1>Boiler servicing only &pound;60</h1>
         
-        <div class="site-info">
-            <?php include_once("google-rating.php") ?>
-            <div class="site-info__description">
-                <p><em>Local gas registered engineer proudly serving Southampton, Totton, Romsey, Chandlers Ford, Hythe and the New Forest.</em></p>
-            </div>
-        </div>
+        <?php include("site-info.php") ?>
 
-        <ul class="list list--horizontal offers">
-            <li><p>No call out fee <strong>Free quotations</strong></p></li>
-            <li><p>Boiler &amp; heating repairs <strong>from &pound;60</strong></p></li>
-            <li><p>Conventional boilers <strong>from &pound;1,299</strong></p></li>
-            <li><p>Combi boilers <strong>from &pound;1,599</strong></p></li>
+        <ul class="list offers">
+            <li><span>No call out fee</span><strong>Free quotations</strong></li>
+            <li><span>Boiler &amp; heating repairs</span><strong>from &pound;60</strong></li>
+            <li><span>Conventional boilers</span><strong>from &pound;1,299</strong></li>
+            <li><span>Combi boilers</span><strong>from &pound;1,599</strong></li>
         </ul>
 
-        <img class="icon icon--flame icon--flame-watermark" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-flame.svg" />
+        <img class="icon icon--flame icon--flame-watermark rellax" data-rellax-xs-speed="-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-flame.svg" />
         
     </div>
     <div class="section__media">
         <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/hero-1440w.jpg" media="(min-width: 376px)">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-1440w.jpg" />
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/hero-1440w.jpg" media="(min-width: 1280px)">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/hero-1280w.jpg" media="(min-width: 1024px)">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/hero-1024w.jpg" media="(min-width: 768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-768w.jpg" />
         </picture>
     </div>
 </div>
