@@ -12,4 +12,9 @@
  */
 html {
     font-size: 62.5%; /* 1. */
+    scroll-behavior: smooth;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
 }
