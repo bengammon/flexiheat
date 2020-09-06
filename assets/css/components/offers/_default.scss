@@ -3,8 +3,10 @@
    ========================================================================== */
 
 .offers {
-    bottom: 0;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 0;
     position: absolute;
     width: 100%;
 
@@ -12,30 +14,100 @@
 
     @include box-shadow;
 
+    @include bp-min-width($bp-desktop) {
+        bottom: 0;
+        flex-direction: row;
+        position: absolute;
+
+    }
+
     > li {
         align-items: center;
         display: flex;
-        flex: 1;
+        flex-direction: column;
         height: $offers-item-height;
         justify-content: center;
+        width: 50%;
+
+        box-sizing: border-box;
 
         @include themify($themes) {
             background-color: darken(themed('color.background'), $offers-bg-darken);
+            border-bottom: 1px solid rgba(themed('color.white'), $offers-border-opacity);
             border-right: 1px solid rgba(themed('color.white'), $offers-border-opacity);
-            font-size: themed('fontSize.h3');
+            font-size: themed('fontSize.mobile.default');
         }
 
         text-align: center;
 
-        &:last-child {
+        @include bp-min-width($bp-tablet) {
+            @include themify($themes) {
+                font-size: themed('fontSize.h3');
+            }
+        }
+
+        @include bp-min-width($bp-desktop) {
+            flex: 1;
+        }
+
+        &:nth-child(1) {
+            order: 5;
+
+            border-bottom: 0;
             border-right: 0;
+
+            @include bp-min-width($bp-desktop) {
+                order: initial;
+
+                @include themify($themes) {
+                    border-right: 1px solid rgba(themed('color.white'), $offers-border-opacity);
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            order: -1;
+
+            @include bp-min-width($bp-desktop) {
+                order: initial;
+
+                border-bottom: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            border-right: 0;
+
+            @include bp-min-width($bp-desktop) {
+                border-bottom: 0;
+
+                @include themify($themes) {
+                    border-right: 1px solid rgba(themed('color.white'), $offers-border-opacity);
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            border-bottom: 0;
+
+            @include bp-min-width($bp-desktop) {
+                border-right: 0;
+            }
+        }
+
+        span {
+            max-width: $offers-item-span-max-width;
+
+            @include bp-min-width($bp-tablet) {
+                max-width: none;
+            }
         }
 
         strong {
             display: block;
 
             @include themify($themes) {
-                color: themed('color.brandPrimary');
+                color: themed('color.brandPrimaryText');
                 font-weight: themed('fontWeight.default');
             }
         }
