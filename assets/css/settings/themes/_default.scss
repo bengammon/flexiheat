@@ -21,6 +21,7 @@ $themes: map-merge(
                 'black': #070f26,
                 'border': #ccc,
                 'brandPrimary': #C9AD8C,
+                'brandPrimaryText': #DFC8AC,
                 'brandSecondary': #070f26,
                 'buttonDisabled': #ccc,
                 'grey': #b5b5b5,
@@ -48,12 +49,20 @@ $themes: map-merge(
                 'h3': 2.4rem,
                 'h4': 1.8rem,
                 'blockquote': 2rem,
+                'desktopSmall': (
+                    'hero': 8rem
+                ),
+                'tablet': (
+                    'hero': 7rem
+                ),
                 'mobile': (
-                    'hero': 3.6rem,
+                    'hero': 4.2rem,
                     'h1': 3.6rem,
-                    'h2': 3.2rem,
+                    'h2': 2.8rem,
                     'h3': 2.4rem,
-                    'h4': 1.8rem
+                    'h4': 1.8rem,
+                    'default': 1.6rem,
+                    'small': 1.4rem
                 )
             ),
             'fontWeight': (
