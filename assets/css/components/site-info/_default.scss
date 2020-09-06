@@ -3,17 +3,36 @@
    ========================================================================== */
 
 .site-info {
+    align-items: flex-start;
     display: flex;
+    flex-direction: column;
+    margin-bottom: $content-gutter;
+
+    @include bp-min-width($bp-tablet) {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
 
     &__description {
         max-width: $site-info-description-max-width;
-        margin-left: $site-info-description-margin-left;
-        padding-left: $content-gutter;
+        margin-top: $spacing-default;
 
         @include themify($themes) {
-            border-left: 1px solid rgba(themed('color.white'), .1);
-            font-size: themed('fontSize.small');
-            line-height: themed('lineHeight.loose');
+            font-size: themed('fontSize.mobile.small');
+            line-height: themed('lineHeight.default');
+        }
+
+        @include bp-min-width($bp-tablet) {
+            max-width: $site-info-description-max-width;
+            margin-left: $site-info-description-margin-left;
+            padding-left: $content-gutter;
+            margin-top: 0;
+
+            @include themify($themes) {
+                border-left: 1px solid rgba(themed('color.white'), .1);
+                font-size: themed('fontSize.small');
+                line-height: themed('lineHeight.default');
+            }
         }
     } 
 }
