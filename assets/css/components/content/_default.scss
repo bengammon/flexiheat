@@ -4,7 +4,13 @@
 
 .content {
     @include themify($themes) {
-        @include rem(font-size, themed('fontSize.default'));
+        @include rem(font-size, themed('fontSize.mobile.default'));
+    }
+
+    @include bp-min-width($bp-tablet) {
+        @include themify($themes) {
+            @include rem(font-size, themed('fontSize.default'));
+        }
     }
 }
 
