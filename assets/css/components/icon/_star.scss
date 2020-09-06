@@ -4,4 +4,8 @@
 
 .icon--star {
     width: $icon-star-width;
+
+    @include bp-min-width($bp-tablet) {
+        width: $icon-star-width-tablet;
+    }
 }
