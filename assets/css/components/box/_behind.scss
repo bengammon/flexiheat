@@ -20,7 +20,28 @@
         z-index: $z-index-under;
 
         @include themify($themes) {
-            background-color: darken(themed('color.background'), $box-bg-darken);
+            background-color: darken(themed('color.background'), $box-bg-darken-opacity);
+        }
+
+        @include bp-min-width($bp-tablet) {
+            bottom: $box-behind-bottom-position-tablet;
+            left: $box-behind-left-position-tablet;
+            right: $box-behind-right-position-tablet;
+        }
+    }
+
+    &-dark {
+        &:after {
+            @include themify($themes) {
+                background-color: darken(themed('color.background'), $box-bg-darker-darken-opacity);
+            }
+        }
+    }
+
+    &-small {
+        &:after {
+            bottom: $box-behind-small-bottom-position;
+            top: $box-behind-small-top-position;
         }
     }
 }

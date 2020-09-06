@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #BOX/SQUARE
+   ========================================================================== */
+
+.box--square {
+    height: $box-square-dimensions;
+    width: $box-square-dimensions;
+
+    @include bp-min-width($bp-tablet) {
+        height: $box-square-dimensions-tablet;
+        width: $box-square-dimensions-tablet;
+    }
+}

@@ -6,6 +6,6 @@
     display: block;
 
     @include themify($themes) {
-        background-color: darken(themed('color.background'), $box-bg-darken);
+        background-color: darken(themed('color.background'), $box-bg-darken-opacity);
     }
 }

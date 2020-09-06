@@ -2,9 +2,19 @@
    #BOX/SETTINGS
    ========================================================================== */
 
-$box-bg-darken: 5%;
+$box-bg-darken-opacity: 5%;
+$box-bg-darker-darken-opacity: 10%;
 
-$box-behind-bottom-position: -3.2rem;
-$box-behind-left-position: -3.2rem;
-$box-behind-right-position: -3.2rem;
+$box-behind-bottom-position: -4.8rem;
+$box-behind-bottom-position-tablet: -3.2rem;
+$box-behind-left-position: -1.6rem;
+$box-behind-left-position-tablet: -3.2rem;
+$box-behind-right-position: -1.6rem;
+$box-behind-right-position-tablet: -3.2rem;
 $box-behind-top-position: -3.2rem;
+
+$box-behind-small-bottom-position: -1.6rem;
+$box-behind-small-top-position: -1.6rem;
+
+$box-square-dimensions: 24rem;
+$box-square-dimensions-tablet: 36rem;
