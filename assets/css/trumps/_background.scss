@@ -15,6 +15,16 @@
             background-color: themed('color.brandSecondary');
         }
     }
+    &-dark {
+        @include themify($themes) {
+            background-color: darken(themed('color.background'), $bg-color-dark-darken-opacity);
+        }
+    }
+    &-darker {
+        @include themify($themes) {
+            background-color: darken(themed('color.background'), $bg-color-darker-darken-opacity);
+        }
+    }
     &-black {
         @include themify($themes) {
             background-color: themed('color.black');

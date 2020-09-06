@@ -30,7 +30,7 @@
     &--color {
         &-primary {
             @include themify($themes) {
-                color: themed('color.brandPrimary');
+                color: themed('color.brandPrimaryText');
             }
         }
     }
