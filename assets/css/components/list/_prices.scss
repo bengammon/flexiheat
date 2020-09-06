@@ -23,6 +23,8 @@
 
             &:last-child {
                 margin-left: $list-prices-li-last-child-margin-left;
+
+                white-space: nowrap;
             }
 
             small {
