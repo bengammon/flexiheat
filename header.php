@@ -12,4 +12,4 @@
 
 <body <?php body_class(); ?>>
 
-<?php include_once("analyticstracking.php") ?>
+<?php include_once("components/analyticstracking.php") ?>

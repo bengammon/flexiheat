@@ -2,7 +2,7 @@
    #HEADER/SETTINGS
    ========================================================================== */
 
-$header-logo-width-mobile: 10rem;
+$header-logo-width-mobile: 32rem;
 $header-logo-width: 43rem;
 
 $header-content-border-opacity: .1;
@@ -13,6 +13,7 @@ $header-nav-button-height: 1.4rem;
 $header-nav-button-margin-right: .5rem;
 $header-nav-button-width: 2.1rem;
 
-$header-padding-top: 5rem; /* $section-masthead-height */
+$header-padding-top: 6rem; /* $section-masthead-height */
+$header-padding-top-tablet: 5rem; /* $section-masthead-height */
 
 $mobile-nav-padding-top: 7rem;
