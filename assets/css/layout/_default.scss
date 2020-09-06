@@ -4,7 +4,7 @@
 
 .layout,
 .layout--inline {
-    width: 100%;
+    width: auto;
 
     @supports (display: grid) {
         display: grid;
@@ -19,8 +19,10 @@
 
 .layout--master {
     @include layout-master();
-
-    margin-bottom: 14rem;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+    position: relative;
+    z-index: $z-index-default;
 
     .layout__item {
         width: 100%;
@@ -34,4 +36,8 @@
             }
         }
     }   
+}
+
+.layout--team {
+    z-index: $z-index-front;
 }
