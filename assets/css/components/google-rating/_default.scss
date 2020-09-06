@@ -6,13 +6,23 @@
     display: inline-block;
 
     @include themify($themes) {
-        font-size: themed('fontSize.small');
+        font-size: themed('fontSize.mobile.small');
+    }
+
+    @include bp-min-width($bp-tablet) {
+        @include themify($themes) {
+            font-size: themed('fontSize.small');
+        }
     }
 
     ul {
         display: flex;
         justify-content: space-between;
-        margin-bottom: $spacing-small;
+        margin-bottom: $google-rating-ul-margin-bottom;
+
+        @include bp-min-width($bp-tablet) {
+            margin-bottom: $spacing-small;
+        }
 
         > li {
             margin-right: $google-rating-list-item-margin-right;
@@ -20,12 +30,19 @@
     }
 
     p {
-        margin-bottom: $spacing-small;
+        margin-bottom: $google-rating-paragraph-margin-bottom;
     }
 
         strong {
             @include themify($themes) {
-                font-size: themed('fontSize.h3');
+                font-size: themed('fontSize.default');
+                font-weight: themed('fontWeight.default');
+            }
+
+            @include bp-min-width($bp-tablet) {
+                @include themify($themes) {
+                    font-size: themed('fontSize.h3');
+                }
             }
         }
 
