@@ -1,0 +1,156 @@
+/* ==========================================================================
+   #FOOTER/DEFAULT
+   ========================================================================== */
+
+.footer {
+    padding-bottom: $footer-padding-vertical;
+    padding-top: $footer-padding-vertical;
+
+    @include layout-master();
+
+    @include themify($themes) {
+        background-color: darken(themed('color.background'), $footer-bg-darken-opacity);
+    }
+
+    &__logo {
+        grid-column: 1 / 7;
+        margin-bottom: $content-gutter-small;
+        position: relative;
+        z-index: $footer-logo-z-index;
+
+        @include bp-min-width($bp-tablet) {
+            grid-column: 2 / 12;
+            margin-bottom: 0;
+
+            text-align: center;
+        }
+
+        &:before {
+            content: "";
+            display: none;
+            height: 100%;
+            left: 50%;
+            position: absolute;
+            top: 0;
+            width: $footer-logo-before-width;
+            z-index: $footer-logo-before-z-index;
+
+            transform: translateX(-50%);
+
+            @include themify($themes) {
+                background-color: darken(themed('color.background'), $footer-bg-darken-opacity);
+            }
+
+            @include bp-min-width($bp-tablet) {
+                display: block;
+            }
+        }
+
+        &:after {
+            content: "";
+            display: none;
+            height: $footer-logo-after-height;
+            left: 0;
+            position: absolute;
+            top: $footer-logo-after-top-position;
+            width: 100%;
+            z-index: $footer-logo-after-z-index;
+
+            @include themify($themes) {
+                background-color: rgba(themed('color.white'), $footer-logo-after-bg-opacity);
+            }
+
+            @include bp-min-width($bp-tablet) {
+                display: block;
+            }
+        }
+
+        .header__logo {
+            margin-left: auto;
+        }
+    }
+
+    &__content {
+        &-1 {
+            grid-column: 1 / 7;
+            grid-row: 2;
+
+            @include bp-min-width($bp-tablet) {
+                display: flex;
+                justify-content: center;
+                grid-column: 2 / 12;
+                grid-row: 2;
+            }
+
+            @include bp-min-width($bp-desktop) {
+                grid-column: 2 / 7;
+                grid-row: 2;
+            }
+        }
+
+        &-2 {
+            grid-column: 1 / 7;
+            grid-row: 3;
+
+            @include bp-min-width($bp-tablet) {
+                display: flex;
+                grid-column: 2 / 12;
+                justify-content: space-between;
+            }
+
+            @include bp-min-width($bp-desktop-small) {
+                justify-content: space-around;
+            }
+
+            @include bp-min-width($bp-desktop) {
+                flex-direction: column;
+                grid-column: 7 / 11;
+                grid-row: 2;
+            }
+
+            p {
+                margin-bottom: $footer-paragraph-margin-bottom;
+            }
+        }
+
+        &-3 {
+            grid-column: 1 / 7;
+            grid-row: 4;
+
+            @include bp-min-width($bp-tablet) {
+                display: flex;
+                justify-content: center;
+                grid-column: 2 / 12;
+            }
+
+            @include bp-min-width($bp-desktop) {
+                align-items: center;
+                justify-content: flex-end;
+                grid-column: 11 / 12;
+                grid-row: 2;
+            }
+        }
+    }
+
+    &__copyright {
+        grid-column: 1 / 7;
+        grid-row: 5;
+        padding-top: 4rem;
+
+        @include themify($themes) {
+            border-top: $footer-copyright-border-width solid rgba(themed('color.white'), $footer-logo-after-bg-opacity);
+        }
+
+        @include bp-min-width($bp-tablet) {
+            grid-column: 2 / 12;
+            grid-row: 5;
+
+            text-align: center;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            grid-column: 2 / 12;
+            grid-row: 3;
+        }
+    }
+}
