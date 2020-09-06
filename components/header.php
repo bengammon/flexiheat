@@ -5,7 +5,7 @@
         <nav class="header__nav">
             <ul class="list list--horizontal-spaced">
                 <li>
-                    <a href="#about">About us</a>
+                    <a href="#about-us">About us</a>
                 </li>
                 <li>
                     <a href="#services">Services</a>
@@ -20,7 +20,7 @@
                     <a href="#gallery">Gallery</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#footer">Contact</a>
                 </li>
             </ul>
         </nav>
