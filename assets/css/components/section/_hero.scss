@@ -3,28 +3,66 @@
    ========================================================================== */
 
 .section--hero {
-    display: flex;
+    @include layout-master();
+
     justify-content: center;
     margin-bottom: $section-hero-margin-bottom;
-    padding: 0;
+    padding-bottom: 0;
+    padding-top: $section-hero-padding-top;
+
+    @include bp-min-width($bp-tablet) {
+        margin-bottom: $section-hero-margin-bottom-tablet;
+        padding: 0;
+    }
+
+    @include bp-min-width($bp-desktop) {
+        margin-bottom: $section-hero-margin-bottom-desktop;
+    }
 
     .section {
         &__content {
             display: flex;
             flex-direction: column;
+            grid-column: 1 / 7;
+            grid-row: 1;
             height: 100%;
             justify-content: center;
-            max-width: $content-width-wide;
-            padding: $section-hero-padding-top 0 $section-hero-padding-bottom;
-            position: absolute;
-            width: 100%;
+            max-width: none;
+            padding: $section-hero-content-padding-top 0 $section-hero-content-padding-bottom;
+            z-index: $z-index-default;
 
             box-sizing: border-box;
 
-            h1 {
-                max-width: $section-hero-h1-max-width;
+            @include bp-min-width($bp-tablet) {
+                grid-column: 2 / 12;
+                padding-top: $section-hero-content-padding-top-tablet;
+                width: 100%;
+            }
 
+            @include bp-min-width($bp-desktop-small) {
+                padding-top: $section-hero-content-padding-top-desktop-small;
+            }
+
+            @include bp-min-width($bp-desktop) {
+                padding-bottom: $section-hero-content-padding-bottom-desktop;
+            }
+
+            h1 {
                 @include text-hero;
+
+                @include bp-min-width($bp-tablet) {
+                    max-width: $section-hero-h1-max-width-tablet;
+                }
+
+                @include bp-min-width($bp-desktop-small) {
+                    margin-bottom: $content-gutter;
+                    max-width: $section-hero-h1-max-width-desktop-small;
+                }
+
+                @include bp-min-width($bp-desktop) {
+                    margin-bottom: $content-gutter;
+                    max-width: $section-hero-h1-max-width-desktop;
+                }
             }
 
             .icon--flame-watermark {
@@ -38,8 +76,19 @@
         }
 
         &__media {
+            grid-column: 1 / 7;
+            grid-row: 1;
+            margin-left: -$layout-gap-master-small;
+            margin-right: -$layout-gap-master-small;
             position: relative;
             z-index: $z-index-back;
+
+            @include bp-min-width($bp-tablet) {
+                grid-column: 1 / 13;
+                grid-row: 1;
+                margin-left: 0;
+                margin-right: 0;
+            }
 
             &:before {
                 content: "";
@@ -51,9 +100,17 @@
                 z-index: $z-index-default;
 
                 @include themify($themes) {
-                    background: linear-gradient(135deg, 
+                    background: linear-gradient(35deg, 
                                 rgba(darken(themed('color.background'), $section-hero-media-gradient-darken), $section-hero-media-gradient-start-opacity) $section-hero-media-gradient-start-position,
                                 rgba(darken(themed('color.background'), $section-hero-media-gradient-darken), $section-hero-media-gradient-end-opacity) $section-hero-media-gradient-end-position);
+                }
+
+                @include bp-min-width($bp-tablet) {
+                    @include themify($themes) {
+                        background: linear-gradient(135deg, 
+                                    rgba(darken(themed('color.background'), $section-hero-media-gradient-darken), $section-hero-media-gradient-start-opacity-tablet) $section-hero-media-gradient-start-position,
+                                    rgba(darken(themed('color.background'), $section-hero-media-gradient-darken), $section-hero-media-gradient-end-opacity-tablet) $section-hero-media-gradient-end-position);
+                    }
                 }
             }
         }

@@ -2,21 +2,33 @@
    #SECTION/SETTINGS
    ========================================================================== */
 
+$section-hero-content-padding-bottom: 15rem; /* $offers-item-height */
+$section-hero-content-padding-bottom-desktop: 7.5rem; /* $offers-item-height / 2 */
+$section-hero-content-padding-top: $content-gutter * 3.5; /* 13.7rem - header (8.7rem) + masthead (5rem) */
+$section-hero-content-padding-top-tablet: $content-gutter * 4.28; /* 13.7rem - header (8.7rem) + masthead (5rem) */
+$section-hero-content-padding-top-desktop-small: $content-gutter * 4.28; /* 13.7rem - header (8.7rem) + masthead (5rem) */
 $section-hero-flame-left-position: -7rem;
 $section-hero-flame-top-position: -7rem;
 $section-hero-flame-opacity: .8;
-$section-hero-h1-max-width: 65rem;
-$section-hero-margin-bottom: 23.5rem; /* 7.5rem + 16rem */
+$section-hero-h1-max-width-tablet: 45rem;
+$section-hero-h1-max-width-desktop-small: 55rem;
+$section-hero-h1-max-width-desktop: 65rem;
+$section-hero-margin-bottom: 25rem; /* 7.5rem + 16rem */
+$section-hero-margin-bottom-tablet: 23.5rem; /* 7.5rem + 16rem */
+$section-hero-margin-bottom-desktop: 14.5rem; /* 7.5rem + 16rem */
 $section-hero-media-gradient-darken: 10%;
-$section-hero-media-gradient-start-opacity: .8;
-$section-hero-media-gradient-end-opacity: .4;
+$section-hero-media-gradient-start-opacity: 1;
+$section-hero-media-gradient-start-opacity-tablet: .8;
+$section-hero-media-gradient-end-opacity: .2;
+$section-hero-media-gradient-end-opacity-tablet: .4;
 $section-hero-media-gradient-start-position: 20%;
 $section-hero-media-gradient-end-position: 100%;
-$section-hero-padding-bottom: 7.5rem; /* half of $offers-item-height */
-$section-hero-padding-top: $content-gutter * 4.28; /* 13.7rem - header (8.7rem) + masthead (5rem) */
+$section-hero-padding-top: 5.8rem;
 
 $section-masthead-bg-opacity: .9;
-$section-masthead-height: 5rem;
+$section-masthead-height-tablet: 5rem;
+$section-masthead-padding-bottom: 1rem;
+$section-masthead-padding-top: 1rem;
 
 $section-vertical-padding-mobile: 6rem;
 $section-vertical-padding: 9rem;

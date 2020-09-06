@@ -3,37 +3,96 @@
    ========================================================================== */
 
 .section--masthead {
-    height: $section-masthead-height;
+    @include layout-master();
+
     left: 0;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-bottom: $section-masthead-padding-bottom;
+    padding-top: $section-masthead-padding-top;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: $z-index-nav;
+
+    box-sizing: border-box;
 
     @include themify($themes) {
         background-color: rgba(darken(themed('color.background'), 5%), $section-masthead-bg-opacity);
     }
 
-    @include bp-min-width($bp-desktop) {
+    @include bp-min-width($bp-tablet) {
+        height: $section-masthead-height-tablet;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    @include bp-min-width($bp-desktop-medium) {
+        left: 50%;
+        
+        transform: translateX(-50%);
     }
 
     .section__content {
         align-items: center;
         display: flex;
+        grid-column: 1 / 7;
         height: 100%;
         justify-content: space-between;
-        max-width: $content-width-wide;
+        max-width: none;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+
+        box-sizing: border-box;
+
+        @include bp-min-width($bp-tablet) {
+            grid-column: 2 / 12;
+        }
+
+        .masthead__meta {
+            @include bp-min-width($bp-tablet) {
+                display: flex;
+            }
+        }
+
+        .text--hours {
+            display: none;
+
+            @include bp-min-width($bp-desktop-small) {
+                display: block;
+            }
+        }
+
+        .text--call-out {
+            a {
+                display: inline-block;
+
+                @include bp-min-width($bp-tablet) {
+                    margin-left: $content-gutter-small;
+                }
+
+                @include bp-min-width($bp-desktop-small) {
+                    display: none;
+                    margin-left: 0;
+                }
+            }
+        }
 
         p {
             display: block;
             margin-bottom: 0;
 
             @include themify($themes) {
-                font-size: themed('fontSize.small');
+                font-size: themed('fontSize.mobile.small');
                 letter-spacing: themed('letterSpacing.loose');
-                line-height: themed('lineHeight.compact');
+            }
+
+            @include bp-min-width($bp-tablet) {
+                margin-right: $content-gutter-small;
+
+                @include themify($themes) {
+                    font-size: themed('fontSize.small');
+                    line-height: themed('lineHeight.compact');
+                }
             }
         }
     }
