@@ -11,14 +11,23 @@
     grid-gap: $layout-gap-master-small;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: minmax(auto, auto);
+    padding-left: $layout-gap-master-small;
+    padding-right: $layout-gap-master-small;
     
     @include bp-min-width($bp-tablet) {
         grid-gap: $layout-gap-master;
+        column-gap: 0;
         grid-template-columns: repeat(12, 1fr);
         grid-auto-rows: minmax(auto, auto);
 
         margin-left: auto;
         margin-right: auto;
         max-width: $layout-max-width;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include bp-min-width($bp-desktop) {
+        grid-gap: $layout-gap-master;
     }
 }

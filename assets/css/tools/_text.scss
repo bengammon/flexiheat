@@ -29,13 +29,19 @@
     @include text-heading();
 
     @include themify($themes) {
-        font-size: themed('fontSize.default');
+        font-size: themed('fontSize.mobile.default');
         font-weight: themed('fontWeight.default');
         letter-spacing: themed('letterSpacing.loose');
         line-height: themed('lineHeight.compact');
     }
 
     text-transform: uppercase;
+
+    @include bp-min-width($bp-desktop) {
+        @include themify($themes) {
+            @include rem(font-size, themed('fontSize.default'));
+        }
+    }
 }
 
 @mixin text-hero() {
@@ -45,6 +51,18 @@
         @include rem(font-size, themed('fontSize.mobile.hero'));
         font-weight: themed('fontWeight.default');
         line-height: themed('lineHeight.hero');
+    }
+
+    @include bp-min-width($bp-tablet) {
+        @include themify($themes) {
+            @include rem(font-size, themed('fontSize.tablet.hero'));
+        }
+    }
+
+    @include bp-min-width($bp-desktop-small) {
+        @include themify($themes) {
+            @include rem(font-size, themed('fontSize.desktopSmall.hero'));
+        }
     }
 
     @include bp-min-width($bp-desktop) {
