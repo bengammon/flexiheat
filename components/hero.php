@@ -6,7 +6,7 @@
         <?php include("site-info.php") ?>
 
         <ul class="list offers">
-            <li><span>No call out fee</span><strong>Free quotations</strong></li>
+            <li><span>Vaillant Advance</span><strong>Pro Installer</strong></li>
             <li><span>Boiler &amp; heating repairs</span><strong>from &pound;60</strong></li>
             <li><span>Conventional boilers</span><strong>from &pound;1,299</strong></li>
             <li><span>Combi boilers</span><strong>from &pound;1,599</strong></li>

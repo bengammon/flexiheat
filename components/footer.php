@@ -11,7 +11,6 @@
         <div class="footer__content-2">
             <p class="text--size-h4">T: 02381 221 991 &#8226; 07809 299 198</p>
             <p>Mon-Sat: 6am-10pm. Sun: 7am-10pm</p>
-            <p>No call out fee.</p>
         </div>
 
         <div class="footer__content-3">
