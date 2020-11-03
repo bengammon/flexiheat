@@ -75,6 +75,37 @@
                     margin-left: 0;
                 }
             }
+
+            .text--bullet {
+                margin-left: .5rem;
+                margin-right: 0;
+
+                @include bp-min-width($bp-tablet) {
+                    display: none;
+                }
+            }
+        }
+
+        .text--email-mobile {
+            @include bp-min-width($bp-desktop) {
+                display: none;
+            }
+
+            a {
+                display: inline-block;
+            }
+        }
+
+        .text--email {
+            display: none;
+
+            @include bp-min-width($bp-desktop) {
+                display: block;
+            }
+
+            a {
+                display: block;
+            }
         }
 
         p {
