@@ -1,7 +1,7 @@
 <div class="section section--hero">
     <div class="section__content">
 
-        <h1>Boiler servicing only &pound;60</h1>
+        <h1>Boiler servicing only &pound;65</h1>
         
         <?php include("site-info.php") ?>
 

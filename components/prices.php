@@ -1,7 +1,7 @@
 <div id="prices" class="layout layout--master">
 
     <div class="content content--prices-1">
-        <h2 class="text--subheading">Prices</h2>
+        <h2 class="text--subheading">Prices <small>(+VAT)</small></h2>
         <ul class="list list--prices">
             <li>
                 <p>Booked appointments, 8am-6pm <small>Covers up to first hour. &pound;60 per hour thereafter</small></p>
@@ -21,7 +21,7 @@
             </li>
             <li>
                 <p>Gas/LPG boiler servicing</p>
-                <p class="text--color-primary">&pound;60</p>
+                <p class="text--color-primary">&pound;65</p>
             </li>
             <li>
                 <p>Combined Gas/LPG boiler servicing and landlord certificate</p>
@@ -31,7 +31,7 @@
     </div>
 
     <div class="content content--prices-2">
-        <h2 class="text--subheading">Emergency call-outs</h2>
+        <h2 class="text--subheading">Emergency call-outs <small>(+VAT)</small></h2>
         <ul class="list list--prices">
             <li>
                 <p>Monday to Friday, 7am-5pm</p>
