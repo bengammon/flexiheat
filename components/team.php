@@ -3,9 +3,9 @@
     <div class="box box--behind content content--team-1 rellax" data-rellax-percentage="0.5" data-rellax-xs-speed="1">
         <h2 class="text--subheading">Your local heating experts</h2>
         <p class="text--size-h2 margin--bottom-none">Michael Phillips</p>
-        <p class="text--size-h3 text--color-primary">Heating Engineer since 2005</p>
+        <p class="text--size-h3 text--color-primary">Heating Engineer</p>
         <p class="text--size-h2 margin--bottom-none">Chris Cousens</p>
-        <p class="text--size-h3 text--color-primary">Heating Engineer since 2004</p>
+        <p class="text--size-h3 text--color-primary">Heating Engineer</p>
         <p>Apprentice trained with over 30 years of industry experience between them, Mike and Chris are fully qualified, gas safe registered (covering both natural gas and LPG), unvented trained and registered.</p>
     </div>
     
