@@ -6,8 +6,8 @@
             <p class="text--hours">Mon-Sat: 6am-10pm. Sun: 7am-10pm</p>
             <p class="text--call-out">
                 <a href="#footer">View hours</a><span class="text--bullet">&#8226;</span>
-                <span class="text--email-mobile"><a href="mailto:mike@flexibleheating.co.uk">Email us</a></span>
-                <span class="text--email"><span class="text--bullet">&#8226;</span> <a href="mailto:mike@flexibleheating.co.uk">mike@flexibleheating.co.uk</a></span>
+                <span class="text--email-mobile"><a href="mailto:info@flexibleheating.co.uk">Email us</a></span>
+                <span class="text--email"><span class="text--bullet">&#8226;</span> <a href="mailto:info@flexibleheating.co.uk">info@flexibleheating.co.uk</a></span>
             </p>
         </div>
 
