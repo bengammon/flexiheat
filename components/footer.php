@@ -22,4 +22,4 @@
             <p class="text--subheading">&copy;2020 Flexible Heating Services</p>
         </div>
         
-</div>
+</footer>

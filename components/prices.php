@@ -13,7 +13,7 @@
             </li>
             <li>
                 <p>Conventional boilers</p>
-                <p class="text--color-primary">from &pound;1,299</p>
+                <p class="text--color-primary">from &pound;1,499</p>
             </li>
             <li>
                 <p>Combi boilers</p>

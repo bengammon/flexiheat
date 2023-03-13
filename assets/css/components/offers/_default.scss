@@ -47,7 +47,7 @@
         }
 
         @include bp-min-width($bp-desktop) {
-            flex: 1;
+            width: 33.333%;
         }
 
         &:nth-child(1) {
@@ -60,6 +60,7 @@
                 order: initial;
 
                 @include themify($themes) {
+                    border-bottom: 1px solid rgba(themed('color.white'), $offers-border-opacity);
                     border-right: 1px solid rgba(themed('color.white'), $offers-border-opacity);
                 }
             }
@@ -71,11 +72,33 @@
             @include bp-min-width($bp-desktop) {
                 order: initial;
 
-                border-bottom: 0;
+                @include themify($themes) {
+                    border-bottom: 1px solid rgba(themed('color.white'), $offers-border-opacity);
+                    border-right: 1px solid rgba(themed('color.white'), $offers-border-opacity);
+                }
             }
         }
 
         &:nth-child(3) {
+            border-right: 0;
+
+            @include bp-min-width($bp-desktop) {
+                border-right: 0;
+
+                @include themify($themes) {
+                    border-bottom: 1px solid rgba(themed('color.white'), $offers-border-opacity);
+                }
+            }
+        }
+
+        &:nth-child(4) {
+
+            @include bp-min-width($bp-desktop) {
+                border-bottom: 0;
+            }
+        }
+
+        &:nth-child(5) {
             border-right: 0;
 
             @include bp-min-width($bp-desktop) {
@@ -87,7 +110,7 @@
             }
         }
 
-        &:nth-child(4) {
+        &:nth-child(6) {
             border-bottom: 0;
 
             @include bp-min-width($bp-desktop) {

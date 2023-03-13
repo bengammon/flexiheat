@@ -3,7 +3,7 @@
     <h2 class="text--subheading content content--services-1">Services provided</h2>
 
     <ul class="list list--bullets content content--services-2">
-        <li>Free quotations</li>
+        <li>Free boiler quotations</li>
         <li>Same day boiler breakdown service</li>
         <li>Boiler installation</li>
         <li>Boiler servicing and repair</li>
