@@ -8,6 +8,8 @@
   });
 </script>
 
+<script async defer id="truequote_script" src="https://truequote.co.uk/quote/flex20230309075026/js"></script>
+
 <?php wp_footer(); ?>
 </body>
 </html>
