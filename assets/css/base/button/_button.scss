@@ -1,18 +1,38 @@
 .btn,
 .btn:link,
 .btn:visited {
+    border-radius: .6rem;
     display: inline-block;
-    padding: $button-padding-vertical $button-padding-horizontal;
+    padding: 1.4rem 2rem 1.6rem;
+    width: max-content;
 
     @include themify($themes) {
-        background-color: themed('color.brandPrimary');
-        border: $button-border-size solid themed('color.brandPrimary');
-        color: themed('color.white');
+        color: themed('color.brandPrimary');
+        font-family: themed('fontFamily.heading');
+        font-weight: themed('fontWeight.bold');
+        line-height: themed('lineHeight.heading');
     }
+
+    background-color: #0d0c0a;
+    border: $button-border-size solid #0d0c0a;
+    box-shadow: inset 0px 0px 10px 0px #0d0c0a;
+    filter: drop-shadow(0px 5px 10px #00000085);
+    font-size: 1.8rem;
     
     cursor: pointer;
     text-decoration: none;
     outline: none;
+
+    small {
+        display: block;
+        margin-top: .6rem;
+
+        @include themify($themes) {
+            color: themed('color.brandPrimary');
+            font-family: themed('fontFamily.default');
+            font-weight: themed('fontWeight.default');
+        }
+    }
 }
 
 .btn:disabled {
