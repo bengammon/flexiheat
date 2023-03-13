@@ -2,17 +2,18 @@
    #SECTION/SETTINGS
    ========================================================================== */
 
-$section-hero-content-padding-bottom: 15rem; /* $offers-item-height */
-$section-hero-content-padding-bottom-desktop: 7.5rem; /* $offers-item-height / 2 */
+$section-hero-content-padding-bottom: 24rem; /* $offers-item-height */
+$section-hero-content-padding-bottom-tablet: 28rem; /* $offers-item-height */
+$section-hero-content-padding-bottom-desktop: 20rem; /* $offers-item-height / 2 */
 $section-hero-content-padding-top: $content-gutter * 3.5; /* 13.7rem - header (8.7rem) + masthead (5rem) */
-$section-hero-content-padding-top-tablet: $content-gutter * 4.28; /* 13.7rem - header (8.7rem) + masthead (5rem) */
-$section-hero-content-padding-top-desktop-small: $content-gutter * 4.28; /* 13.7rem - header (8.7rem) + masthead (5rem) */
+$section-hero-content-padding-top-tablet: 20rem; /* 13.7rem - header (8.7rem) + masthead (5rem) */
+$section-hero-content-padding-top-desktop-small: 20rem; /* 13.7rem - header (8.7rem) + masthead (5rem) */
 $section-hero-flame-left-position: -7rem;
 $section-hero-flame-top-position: -7rem;
 $section-hero-flame-opacity: .8;
-$section-hero-h1-max-width-tablet: 45rem;
-$section-hero-h1-max-width-desktop-small: 55rem;
-$section-hero-h1-max-width-desktop: 65rem;
+$section-hero-h1-max-width-tablet: 60rem;
+$section-hero-h1-max-width-desktop-small: 70rem;
+$section-hero-h1-max-width-desktop: 70rem;
 $section-hero-margin-bottom: 25rem; /* 7.5rem + 16rem */
 $section-hero-margin-bottom-tablet: 23.5rem; /* 7.5rem + 16rem */
 $section-hero-margin-bottom-desktop: 14.5rem; /* 7.5rem + 16rem */
